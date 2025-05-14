@@ -1,0 +1,204 @@
+  @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
+
+    body {
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: #111;
+      font-family: 'Montserrat', sans-serif;
+      overflow: hidden;
+      scroll-behavior: smooth;
+    }
+
+    .bg-img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: url('images/home-bg.png') center center/cover no-repeat;
+      transform: scale(1.2);
+      animation: zoomOut 1.5s ease-out forwards;
+    }
+
+
+    @keyframes zoomOut {
+      0% {
+        transform: scale(1.2);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+header {
+  position: fixed;
+  top: 0;
+  width: 90%;
+  background: transparent;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+}
+
+.logo-container {
+  margin-left: 10%;
+  display: flex;
+  align-items: center;
+}
+
+.m-logo {
+  height: 50px;
+}
+
+.navbar1 {
+  position: relative;
+  color: #111;
+  text-decoration: none;
+  font-family: "Share Tech", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 150%;
+  margin-right: 80px;
+}
+
+.navbar1::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px; 
+  width: 0;
+  height: 2px;
+  background-color: #111;
+  transition: width 0.3s ease;
+}
+
+.navbar1:hover::after {
+  width: 100%;
+}
+
+.pop-text {
+      color: white;
+      font-size: 7rem;
+      font-weight: 700;
+      animation: popUp 1s ease-out forwards;
+      opacity: 0;
+      position: fixed;
+      margin-left: -535px;
+      margin-top: -273px;
+      transform: scale(0.5);
+  }
+
+  .pop-text-sub {
+      color: rgb(0, 0, 0);
+      position: fixed;
+      font-size: 1.3rem;
+      font-weight: 700;
+      animation: popUp 1s ease-out forwards;
+      opacity: 0;
+      margin-top: -300px;
+      transform: scale(0.5);
+      margin-left: -160px;
+  }
+
+  @keyframes popUp {
+      0% {
+        opacity: 0;
+        transform: scale(0.5);
+      }
+      50% {
+        opacity: 1;
+        transform: scale(1.2);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+  }
+    
+  .car-container {
+      position: absolute;
+      width: 1000px;
+      height: 500px;
+      margin-top: -30px;
+  }
+
+  .car-image {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      opacity: 0;
+      margin-top: 43px;
+      transform: scale(0.9);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+
+    .car-image.active {
+      opacity: 1;
+      transform: scale(1);
+      z-index: 1;
+    }
+
+    .sections {
+      display: flex;
+      position: absolute;
+      gap: 20px;
+      margin-top: 550px;
+      z-index: 1;
+      font-weight: bold;
+    }
+
+    .section-number {
+      font-size: 20px;
+      color: white;
+      cursor: pointer;
+      transition: color 0.3s ease;
+    }
+
+    .section-number.active {
+      color: black;
+    }
+
+    .home__button{
+  z-index: 888;
+  position: relative;
+  color: aliceblue;
+  border: 2px solid hsl(158, 89%, 30%);
+  width: 70px;
+  text-decoration: none;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  animation: popUp 1s ease-out forwards;
+  justify-content: center;
+  justify-self: center;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  top: 40%;
+  transition: box-shadow 0.3s ease;
+}
+
+.home__button::before{
+  content: '';
+  border: 2px solid hsl(158, 98%, 43%);
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  border-radius: 50%;
+  transition: .3s;
+  animation: button 3s infinite; 
+}
+
+.home__button:hover{
+    box-shadow: 
+    0 0 15px hsl(158, 98%, 43%), 
+    0 0 30px hsl(158, 98%, 43%),
+    0 0 45px hsl(158, 98%, 43%), 
+    0 0 60px hsl(158, 98%, 43%),  
+    0 0 75px hsl(158, 98%, 43%);
+}
