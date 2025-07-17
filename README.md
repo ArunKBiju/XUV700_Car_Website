@@ -8,7 +8,7 @@ An interactive, visually rich website built to highlight the design, features, a
 
 This website is designed to simulate a product showcase for the Mahindra XUV700. It includes a dynamic image slider, section-based navigation, and scroll-triggered video playback. The layout is optimized for a 17-inch laptop display and may show inconsistencies on other screen sizes.
 
-🔗 **Live Site:** [https://arunkbiju.github.io/My-Portfolio/](https://arunkbiju.github.io/My-Portfolio/)
+🔗 **Live Site:** [https://arunkbiju.github.io/XUV700_Car_Website](https://arunkbiju.github.io/XUV700_Car_Website)
 
 ---
 
