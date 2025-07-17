@@ -50,6 +50,13 @@ This website is designed to simulate a product showcase for the Mahindra XUV700.
 
 ---
 
+## Screenshot
+
+<img width="1903" height="1079" alt="Image" src="https://github.com/user-attachments/assets/78758d60-167c-4a4b-a882-376f6f4a9bb0" />
+<img width="1904" height="1079" alt="Image" src="https://github.com/user-attachments/assets/800c1685-d033-4156-a987-fc46dbfdc535" />
+
+---
+
 ## Credits
 
 Developed by **Arun K Biju**  
