@@ -23,7 +23,7 @@ body {
 .section {
   min-height: 100vh;
   padding: 100px 50px;
-  background-color: #f4f4f4; /* You can change background per section */
+  background-color: #f4f4f4;
 }
 
 @keyframes zoomOut {
@@ -256,17 +256,17 @@ footer {
 .about-text h2 {
   font-size: 48px;
   font-weight: bold;
-  color: #FFFFFF; /* White text */
+  color: #FFFFFF;
 }
 
 .about-text h2 span {
-  color: #000000; /* Black text for highlighting */
+  color: #000000;
   padding: 5px;
 }
 
 .about-text p {
   font-size: 25px;
-  color: #FFFFFF; /* White text */
+  color: #FFFFFF;
   max-width: 600px;
   margin: 0 auto;
 }
